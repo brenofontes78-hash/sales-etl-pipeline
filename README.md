@@ -32,29 +32,29 @@ O projeto busca simular um cenário próximo ao encontrado em ambientes reais de
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-➞ Estrutura do Projeto
 
-sales_pipeline/
-│
-├── data/
-│   ├── raw/
-│   │   └── vendas_sujas.csv
-│
-├── logs/
-│   └── pipeline.log
-│
-├── sql/
-│   └── queries.sql
-│
-├── scripts/
-│   ├── a_extract.py
-│   ├── b_transform.py
-│   ├── c_load.py
-│   └── main.py 
-│
-├── .env
-├── .env.example
-├── .gitignore
-├── requirements.txt
-├── run.bat
-└── README.md
+➞ Dashboard
+
+Dashboard desenvolvido no Power BI para análise dos dados de vendas.
+
+![Dashboard de vendas](dashboard/dashboard_preview.png)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+➞ Como Executar
+
+Instale as dependências com:
+
+pip install -r requirements.txt
+
+Renomeie o `.env.example` para `.env` e preencha os dados do PostgreSQL e entao execute:
+
+python scripts/main.py
+
+Também é possível executar pelo `run.bat`.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+➞ Autor
+
+Breno
